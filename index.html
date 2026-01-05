@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Form Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Payment form example</h2>
+
+  <div id="alert" class="alert hidden">
+    Some fields are missing
+  </div>
+
+  <form id="paymentForm">
+    <div class="row">
+      <div class="field">
+        <label>Card #</label>
+        <input type="text" placeholder="XXXXXXXXXXXXXXXX" maxlength="16">
+      </div>
+      <div class="field small">
+        <label>CVC #</label>
+        <input type="text" placeholder="000" maxlength="4">
+      </div>
+      <div class="field small">
+        <label>Amount</label>
+        <input type="number" placeholder="Amount">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>First Name</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>City</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>State</label>
+        <select>
+          <option value="">Pick a state</option>
+          <option>CA</option>
+          <option>NY</option>
+          <option>TX</option>
+        </select>
+      </div>
+      <div class="field small">
+        <label>Postal Code</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Message</label>
+        <textarea placeholder="Add any notes here."></textarea>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="button" class="cancel">Cancel</button>
+      <button type="submit" class="send">Send</button>
+    </div>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
